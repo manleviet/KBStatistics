@@ -29,7 +29,7 @@ The tool prints out statistics of given knowledge bases, which are as the follow
 
 ### Supports the following knowledge bases
 
-- _Feature Models_ from SPLOT, FeatureIDE, Glencoe, and other tools
+- _Feature Models_ from SPLOT, FeatureIDE, Glencoe, and other tools. You can find some feature model examples in [here](https://github.com/manleviet/KBStatistics/tree/main/src/test/resources/fms).
 - _PC_ and _Renault_ from https://www.itu.dk/research/cla/externals/clib/
 
 ### Dependencies
