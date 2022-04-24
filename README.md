@@ -34,6 +34,6 @@ The tool prints out statistics of given knowledge bases, which are as the follow
 
 ### Dependencies
 
-- [ChocoKB v1.2.7](https://github.com/manleviet/ChocoKB)
+- [ChocoKB v1.2.11](https://github.com/manleviet/ChocoKB)
 - [fm v1.2.9](https://github.com/manleviet/FeatureModelPackage)
 - [common v1.2.4](https://github.com/manleviet/CommonPackage)
