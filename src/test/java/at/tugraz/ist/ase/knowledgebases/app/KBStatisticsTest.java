@@ -136,8 +136,8 @@ class KBStatisticsTest {
                     Source: SPLOT
                     #variables: 12
                     #constraints: 10
-                    #Choco variables: 26
-                    #Choco constraints: 22
+                    #Choco variables: 28
+                    #Choco constraints: 23
                     Consistency: true
                     
                     CTC ratio: 0.4
@@ -177,8 +177,8 @@ class KBStatisticsTest {
                     Source: SPLOT
                     #variables: 11
                     #constraints: 8
-                    #Choco variables: 24
-                    #Choco constraints: 19
+                    #Choco variables: 26
+                    #Choco constraints: 20
                     Consistency: true
                     
                     CTC ratio: 0.25
@@ -196,8 +196,8 @@ class KBStatisticsTest {
                     Source: SPLOT
                     #variables: 11
                     #constraints: 8
-                    #Choco variables: 24
-                    #Choco constraints: 19
+                    #Choco variables: 26
+                    #Choco constraints: 20
                     Consistency: true
                     
                     CTC ratio: 0.25
@@ -215,8 +215,8 @@ class KBStatisticsTest {
                     Source: SPLOT
                     #variables: 11
                     #constraints: 8
-                    #Choco variables: 24
-                    #Choco constraints: 19
+                    #Choco variables: 26
+                    #Choco constraints: 20
                     Consistency: true
                     
                     CTC ratio: 0.25
@@ -234,8 +234,8 @@ class KBStatisticsTest {
                     Source: SPLOT
                     #variables: 11
                     #constraints: 8
-                    #Choco variables: 24
-                    #Choco constraints: 19
+                    #Choco variables: 26
+                    #Choco constraints: 20
                     Consistency: true
                     
                     CTC ratio: 0.25
@@ -253,8 +253,8 @@ class KBStatisticsTest {
                     Source: SPLOT
                     #variables: 263
                     #constraints: 261
-                    #Choco variables: 527
-                    #Choco constraints: 681
+                    #Choco variables: 601
+                    #Choco constraints: 608
                     Consistency: true
                     
                     CTC ratio: 0.3218390804597701
@@ -272,8 +272,8 @@ class KBStatisticsTest {
                     Source: SPLOT
                     #variables: 11
                     #constraints: 8
-                    #Choco variables: 24
-                    #Choco constraints: 19
+                    #Choco variables: 26
+                    #Choco constraints: 20
                     Consistency: true
                     
                     CTC ratio: 0.25
@@ -291,8 +291,8 @@ class KBStatisticsTest {
                     Source: SPLOT
                     #variables: 12
                     #constraints: 10
-                    #Choco variables: 26
-                    #Choco constraints: 22
+                    #Choco variables: 28
+                    #Choco constraints: 23
                     Consistency: true
                     
                     CTC ratio: 0.4
@@ -310,7 +310,7 @@ class KBStatisticsTest {
 
     @Test
     void testManyFMsAndKB() {
-        String[] args = new String[]{"-fm-dir", "./src/test/resources/fms", "-kb", "PC", "Renault"};
+        String[] args = new String[]{"-fm-dir", "./src/test/resources/fms", "-kb", "PC"}; // , "Renault"
 
         KBStatistics_CmdLineOptions options = new KBStatistics_CmdLineOptions(null, programTitle, null, usage);
         options.parseArgument(args);
@@ -336,20 +336,31 @@ class KBStatisticsTest {
                         #Choco constraints: 644
                         Consistency: true
                         2
-                        Name: RenaultConfigurationProblem
-                        Source: https://www.itu.dk/research/cla/externals/clib/
-                        #variables: 99
-                        #constraints: 113
-                        #Choco variables: 3178088
-                        #Choco constraints: 1694394
-                        Consistency: true
-                        3
                         Name: bamboobike.xmi
                         Source: SPLOT
                         #variables: 11
                         #constraints: 8
-                        #Choco variables: 24
-                        #Choco constraints: 19
+                        #Choco variables: 26
+                        #Choco constraints: 20
+                        Consistency: true
+                        
+                        CTC ratio: 0.25
+                        #features: 11
+                        #relationships: 6
+                        #constraints: 2
+                        #MANDATORY: 2
+                        #OPTIONAL: 2
+                        #ALTERNATIVE: 1
+                        #OR: 1
+                        #REQUIRES: 1
+                        #EXCLUDES: 1
+                        3
+                        Name: bamboobike_featureide.xml
+                        Source: SPLOT
+                        #variables: 11
+                        #constraints: 8
+                        #Choco variables: 26
+                        #Choco constraints: 20
                         Consistency: true
                         
                         CTC ratio: 0.25
@@ -363,12 +374,12 @@ class KBStatisticsTest {
                         #REQUIRES: 1
                         #EXCLUDES: 1
                         4
-                        Name: bamboobike_featureide.xml
+                        Name: bamboobike.gfm.json
                         Source: SPLOT
                         #variables: 11
                         #constraints: 8
-                        #Choco variables: 24
-                        #Choco constraints: 19
+                        #Choco variables: 26
+                        #Choco constraints: 20
                         Consistency: true
                         
                         CTC ratio: 0.25
@@ -382,12 +393,12 @@ class KBStatisticsTest {
                         #REQUIRES: 1
                         #EXCLUDES: 1
                         5
-                        Name: bamboobike.gfm.json
+                        Name: bamboobike.fm4conf
                         Source: SPLOT
                         #variables: 11
                         #constraints: 8
-                        #Choco variables: 24
-                        #Choco constraints: 19
+                        #Choco variables: 26
+                        #Choco constraints: 20
                         Consistency: true
                         
                         CTC ratio: 0.25
@@ -401,31 +412,12 @@ class KBStatisticsTest {
                         #REQUIRES: 1
                         #EXCLUDES: 1
                         6
-                        Name: bamboobike.fm4conf
-                        Source: SPLOT
-                        #variables: 11
-                        #constraints: 8
-                        #Choco variables: 24
-                        #Choco constraints: 19
-                        Consistency: true
-                        
-                        CTC ratio: 0.25
-                        #features: 11
-                        #relationships: 6
-                        #constraints: 2
-                        #MANDATORY: 2
-                        #OPTIONAL: 2
-                        #ALTERNATIVE: 1
-                        #OR: 1
-                        #REQUIRES: 1
-                        #EXCLUDES: 1
-                        7
                         Name: ubuntu.splx
                         Source: SPLOT
                         #variables: 263
                         #constraints: 261
-                        #Choco variables: 527
-                        #Choco constraints: 681
+                        #Choco variables: 601
+                        #Choco constraints: 608
                         Consistency: true
                         
                         CTC ratio: 0.3218390804597701
@@ -438,13 +430,13 @@ class KBStatisticsTest {
                         #OR: 1
                         #REQUIRES: 65
                         #EXCLUDES: 0
-                        8
+                        7
                         Name: bamboobike_splot.sxfm
                         Source: SPLOT
                         #variables: 11
                         #constraints: 8
-                        #Choco variables: 24
-                        #Choco constraints: 19
+                        #Choco variables: 26
+                        #Choco constraints: 20
                         Consistency: true
                         
                         CTC ratio: 0.25
@@ -457,13 +449,13 @@ class KBStatisticsTest {
                         #OR: 1
                         #REQUIRES: 1
                         #EXCLUDES: 1
-                        9
+                        8
                         Name: smartwatch.sxfm
                         Source: SPLOT
                         #variables: 12
                         #constraints: 10
-                        #Choco variables: 26
-                        #Choco constraints: 22
+                        #Choco variables: 28
+                        #Choco constraints: 23
                         Consistency: true
                         
                         CTC ratio: 0.4
@@ -477,5 +469,13 @@ class KBStatisticsTest {
                         #REQUIRES: 2
                         #EXCLUDES: 1""";
         assertEquals(expected, content.get());
+//        2
+//        Name: RenaultConfigurationProblem
+//        Source: https://www.itu.dk/research/cla/externals/clib/
+//                        #variables: 99
+//                        #constraints: 113
+//                        #Choco variables: 3178088
+//                        #Choco constraints: 1694394
+//        Consistency: true
     }
 }
