@@ -1,5 +1,7 @@
 # KBStatistics
 
+*Migrated to [https://github.com/manleviet/CA-CDR-V2](https://github.com/manleviet/CA-CDR-V2)*
+
 A Knowledge Base Statistics Tool
 
 ### Features
