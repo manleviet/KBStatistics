@@ -149,6 +149,7 @@ public class KBStatistics {
             File folder = new File(options.getFmDir());
 
             for (final File file : Objects.requireNonNull(folder.listFiles())) {
+                // TODO - check if the file is a feature model
                 processFM(writer, ++counter, file);
             }
         }
